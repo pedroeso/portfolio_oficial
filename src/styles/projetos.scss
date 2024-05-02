@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+    text-align: center;
+    padding: 24px;
+    padding-bottom: 50px;
+    transition: opacity 0.3s ease;
+    
+
+    &__list {
+        display: grid;
+        flex-direction: row;
+        list-style: none;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+
+.h4 {
+    color: variaveis.$corDiferenciada;
+}
+
+.versel {
+    border-radius: 20px;
+    border: 2px solid variaveis.$corDiferenciada;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+}
+
+.elementos {
+    padding-bottom: 100px;
+}
+
+.diferenciadomesmo {
+    color: variaveis.$corDiferenciada;
+    font-size: 24px;
+}
+
+.subtexto {
+    padding-left: 80px;
+    padding-right: 80px;
+}

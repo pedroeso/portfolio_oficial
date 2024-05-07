@@ -8,7 +8,7 @@
     text-align: center;
     padding: 24px;
     padding-bottom: 50px;
-    transition: opacity 0.3s ease;
+    transition: opacity 1.0s ease;
     
 
     &__list {
@@ -27,6 +27,7 @@
 .versel {
     border-radius: 20px;
     border: 2px solid variaveis.$corDiferenciada;
+    width: 80%;
 }
 
 .landing {
@@ -46,4 +47,5 @@
 .subtexto {
     padding-left: 80px;
     padding-right: 80px;
+    font-size: 15px;
 }

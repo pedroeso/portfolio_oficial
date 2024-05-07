@@ -11,7 +11,8 @@
         <div class="container">
             <ul class="header__menu">
                 <li class="header__menu__imagem">
-                    <img src="./src/images/list.svg" alt="menu" width="30px">
+                    <button class="caixote" id="caixote"><img src="./src/images/list.svg" alt="menu" width="30px"></button>
+                    <button class="xis" id="xis"><img src="./src/images/close.svg" alt="menu" width="25px"></button>
                 </li>
                 <li>
                     <h2 class="porfolio">Portfólio</h2>
@@ -20,7 +21,18 @@
         </div>
     </header>
     <section>
-        <div class="container">
+        <div class="caixa" id="caixa">
+            <ul class="barra container">
+                <h3 class="barra__lista">
+                    <li class="utensilios"><a style="text-decoration: none; color: #ffffff;" href="#intro">Início</a></li>
+                    <li class="utensilios"><a style="text-decoration: none; color: #ffffff;" href="#about">Sobre</a></li>
+                    <li class="utensilios"><a style="text-decoration: none; color: #ffffff;" href="#skills">Habilidades</a></li>
+                    <li class="utensilios"><a style="text-decoration: none; color: #ffffff;" href="#projetos">Projetos</a></li>
+                    <li class="utensilios"><a style="text-decoration: none; color: #ffffff;" href="#contatos">Contatos</a></li>
+                </h3>
+            </ul>
+        </div>
+        <div class="container" id="intro">
             <div class="hero">
                 <div class="intro">
                     <div class="title">
@@ -41,7 +53,7 @@
                 </ul>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="title">
                 <h2>Sobre mim</h2>
                 <p class="front__back">Sou um desenvolvedor Front End com experiência em HTML, CSS e Javascript (Vanilla, jQuery e Bootstrap), SASS e Gulp. Atualmente, estou aprimorando minhas habilidades como estudante do curso Fullstack Python da EBAC.</p>
@@ -88,7 +100,7 @@
                         <ul class="projetos__list">
                         <li class="elementos">
                             <h3><span class="diferenciadomesmo">Clone Disney+</span></h3>
-                            <h3 class="subtexto">Landing page clone feito com HTML5, CSS3, Javascript, SASS e Gulpfile</h3>
+                            <h3 class="subtexto">Landing page clone da plataforma "Disney+" feito com HTML5, CSS3, Javascript, SASS e Gulpfile</h3>
                             <img class="versel" width="80%" src="./src/images/projetos/clonedisney.png" alt="Clone Disney+">
                             <br/>
                             <br/>
@@ -152,7 +164,7 @@
                             <button class="buttonquatro">
                                 <a href="mailto:pedroesodev@gmail.com?subject=Oi&body=Olá, como você está?
                                 ">
-                                    <img width="24%" src="./src/images/Contatos/email.svg" alt="e-mail">
+                                    <img width="20%" src="./src/images/Contatos/email.svg" alt="e-mail">
                                     <h2 class="meu">E-mail</h2>
                                 </a>
                             </button>
@@ -161,7 +173,7 @@
                         <li>
                             <button class="buttonquatro">
                                 <a href="https://wa.me/5521971999785?text=">
-                                    <img width="24%" src="./src/images/Contatos/phone.svg" alt="telefone">
+                                    <img width="20%" src="./src/images/Contatos/phone.svg" alt="telefone">
                                     <h2 class="meu">Telefone</h2>
                                 </a>
                             </button>
@@ -170,7 +182,7 @@
                         <li>
                             <button class="buttonquatro">
                                 <a href="https://www.linkedin.com/in/pedro-ribeiro-2838b02b1/">
-                                    <img width="24%" src="./src/images/Contatos/linkedin.svg" alt="linkedin">
+                                    <img width="20%" src="./src/images/Contatos/linkedin.svg" alt="linkedin">
                                     <h2 class="meu">Linkedin</h3>
                                 </a>
                             </button>
@@ -178,7 +190,7 @@
                         <li>
                             <button class="buttonquatro">
                                 <a href="https://github.com/pedroeso">
-                                    <img width="24%" src="./src/images/Contatos/github.svg" alt="github">
+                                    <img width="20%" src="./src/images/Contatos/github.svg" alt="github">
                                     <h2 class="meu">Github</h3>
                                 </a>
                             </button>

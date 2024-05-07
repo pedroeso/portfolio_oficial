@@ -43,5 +43,31 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.getElementById("caixote").addEventListener("click", function() {
+  // Encontra a div pelo ID
+  var div = document.getElementById("caixa");
+  var elemento = document.getElementById('caixa');
+  
+  
+  // Altera o estilo para tornar a div visível
+  div.style.display = "block";
+  caixote.style.display = "none";
+  xis.style.display = "block"; 
+  
+});
+
+document.getElementById("xis").addEventListener("click", function() {
+  // Encontra a div pelo ID
+  var div = document.getElementById("caixa");
+  
+  // Altera o estilo para tornar a div visível
+  div.style.display = "block"; 
+  caixa.style.display = "none";
+  xis.style.display = "none";
+  caixote.style.display = "block"; 
+  
+});
+
+
 
 

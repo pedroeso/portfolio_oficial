@@ -47,3 +47,65 @@ header::after {
     height: 0.1rem;
     background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
 }
+
+.barra {
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: end;
+    padding-right: 200px;
+    opacity: 1;
+    
+
+    
+
+    &__lista {
+        font-size: 18px;
+        
+    }
+}
+
+.linha {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+}
+
+
+.caixote {
+    background-color: variaveis.$corDeFundoBotaoTransparente;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    } 
+}
+
+.xis {
+    background-color: variaveis.$corDeFundoBotaoTransparente;
+    border: none;
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    } 
+}
+
+.utensilios {
+    list-style: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+#caixa {
+    position: sticky;
+    display: none; /* inicialmente escondido */
+    opacity: 1; /* opacidade inicial */
+    height: 0; /* altura inicial */
+}
+

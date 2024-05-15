@@ -1,15 +1,20 @@
 @use 'variaveis';
 
+
 .header {
-    
     top: 0;
     left: 0;
     z-index: 1000;
     position: sticky;
     width: 100%;
     justify-content: space-between;
-    
-    
+
+    @media (max-width: 768px) {
+        max-width: 200%;
+    }
+
+
+
     &__menu {
         padding: 25px 0;
         display: flex;
@@ -19,12 +24,19 @@
         width: 90%;
         list-style: none;
 
+        @media (max-width: 768px) {
+            width: 80%;
+            margin: 0px;
+            padding-left: 35px;
+        }
+
             &__imagem {
                 margin: 0;
                 padding: 0;
                 border: 0;
                 background-size: cover;
                 height: 30px;
+
             }
 
     }
@@ -34,8 +46,6 @@ header.scrolled {
     background-color: variaveis.$corDeFundoBotaoTransparente;
     opacity: 1;
 }
-
-
 
 
 
@@ -49,23 +59,59 @@ header::after {
 }
 
 .barra {
-    position: absolute;
+    
     display: flex;
     list-style-type: none;
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: end;
-    padding-right: 200px;
+    padding-right: 300px;
     opacity: 1;
+
+    @media (max-width: 1024px) {
+        top: 0;
+        align-items: baseline;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-top: 10px;
+        padding-right: 0px;
+        margin-bottom: 1px;
+    }
     
 
     
 
     &__lista {
         font-size: 18px;
+
+        @media (max-width: 1024px) {
+            font-size: 13px; 
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            line-height: 25px;
+        }
         
     }
 }
+
+
+.caixa::after {
+    @media (max-width: 1024px) {
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 0.1rem;
+        background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+    }
+}
+
+
+
+
 
 .linha {
     content: "";
@@ -75,6 +121,7 @@ header::after {
     height: 0.1rem;
     background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
 }
+
 
 
 .caixote {
@@ -100,6 +147,10 @@ header::after {
     list-style: none;
     display: inline-block;
     padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-right: 20px;
+    }
 }
 
 #caixa {

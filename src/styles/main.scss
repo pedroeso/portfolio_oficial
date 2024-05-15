@@ -47,6 +47,20 @@ h3 {
     font-weight: 400;
     color: #F9F9F9;
     line-height: 62px;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 48px;
+        justify-content: center;
+
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    
 }
 
 
@@ -69,6 +83,14 @@ h3 {
     background-image: none;
     outline: none;
 
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 50%;
+    }
 
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 8%);
@@ -98,6 +120,10 @@ a {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
     background-image: none;
     outline: none;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
     
 
     &:hover {

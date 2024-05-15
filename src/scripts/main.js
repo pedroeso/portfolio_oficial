@@ -46,11 +46,15 @@ window.addEventListener('scroll', function() {
 document.getElementById("caixote").addEventListener("click", function() {
   // Encontra a div pelo ID
   var div = document.getElementById("caixa");
-  var elemento = document.getElementById('caixa');
+  var elemento = document.getElementById('hero');
+  var div = document.getElementById("caixa");
   
   
   // Altera o estilo para tornar a div visível
   div.style.display = "block";
+  if (window.matchMedia("(max-width: 1024px)").matches) {
+    hero.style.paddingTop = "200px";
+}
   caixote.style.display = "none";
   xis.style.display = "block"; 
   
@@ -59,9 +63,13 @@ document.getElementById("caixote").addEventListener("click", function() {
 document.getElementById("xis").addEventListener("click", function() {
   // Encontra a div pelo ID
   var div = document.getElementById("caixa");
+  var elemento = document.getElementById('hero');
   
   // Altera o estilo para tornar a div visível
   div.style.display = "block"; 
+  if (window.matchMedia("(max-width: 1024px)").matches) {
+    hero.style.paddingTop = "50px";
+}
   caixa.style.display = "none";
   xis.style.display = "none";
   caixote.style.display = "block"; 

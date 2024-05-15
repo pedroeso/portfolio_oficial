@@ -9,13 +9,20 @@
     padding: 24px;
     padding-bottom: 50px;
     transition: opacity 1.0s ease;
-    
+
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
 
     &__list {
         display: grid;
         flex-direction: row;
         list-style: none;
         grid-template-columns: 1fr 1fr ;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 

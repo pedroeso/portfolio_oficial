@@ -52,6 +52,8 @@ document.getElementById("caixote").addEventListener("click", function() {
   
   // Altera o estilo para tornar a div visível
   div.style.display = "block";
+  div.style.animation = "fade 0.3s ease";
+  div.style.opacity = "1";
   if (window.matchMedia("(max-width: 1024px)").matches) {
     hero.style.paddingTop = "200px";
 }
@@ -66,15 +68,25 @@ document.getElementById("xis").addEventListener("click", function() {
   var elemento = document.getElementById('hero');
   
   // Altera o estilo para tornar a div visível
-  div.style.display = "block"; 
+  
   if (window.matchMedia("(max-width: 1024px)").matches) {
     hero.style.paddingTop = "50px";
 }
-  caixa.style.display = "none";
-  xis.style.display = "none";
-  caixote.style.display = "block"; 
-  
+      caixa.style.animation = "fadeout 0.2s ease"; // Aplica a animação de fadeout
+
+      if (window.matchMedia("(max-width: 1024px)").matches) {
+        
+        caixa.style.animation = "fadeout 100ms ease"; // Aplica a animação de fadeout
+    }
+
+      caixa.style.opacity = "0"; // Define a opacidade para 0 para iniciar a animação de fadeout
+// Quando a animação de fadeout terminar, altera o display para none
+      xis.style.display = "none";
+      caixote.style.display = "block"; 
 });
+
+
+
 
 
 

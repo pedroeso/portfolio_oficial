@@ -58,24 +58,24 @@ header::after {
     background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
 }
 
+
+
 .barra {
-    
     display: flex;
     list-style-type: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    align-items: end;
-    padding-right: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     opacity: 1;
+    background-color: #6045a1;
+    padding-left: 400px;
 
     @media (max-width: 1024px) {
-        top: 0;
         align-items: baseline;
         padding-bottom: 10px;
         padding-left: 0px;
         padding-top: 10px;
         padding-right: 0px;
-        margin-bottom: 1px;
+        margin-bottom: 0px;
     }
     
 
@@ -96,6 +96,7 @@ header::after {
 }
 
 
+
 .caixa::after {
     @media (max-width: 1024px) {
         top: 0;
@@ -108,8 +109,6 @@ header::after {
         background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
     }
 }
-
-
 
 
 
@@ -153,10 +152,34 @@ header::after {
     }
 }
 
+
 #caixa {
     position: sticky;
     display: none; /* inicialmente escondido */
-    opacity: 1; /* opacidade inicial */
+    opacity: 0; /* Define a opacidade inicial para 0 */
     height: 0; /* altura inicial */
 }
+
+/* Defina os keyframes para a animação de fade */
+@keyframes fade {
+    from { opacity: 0; } /* Opacidade inicial (0) */
+    to { opacity: 1; } /* Opacidade final (1) */
+}
+
+/* Defina os keyframes para a animação de fadeout */
+@keyframes fadeout {
+    from { opacity: 1; } /* Opacidade inicial (1) */
+    to { opacity: 0; } /* Opacidade final (0) */
+}
+
+/* Estilize o elemento que será animado */
+#caixa {
+    opacity: 0; /* Começa completamente transparente */
+    animation: fade 0.5s ease; /* Aplica a animação de fade */
+    position: sticky;
+    display: none; /* inicialmente escondido */
+    height: 0; /* altura inicial */
+}
+
+
 

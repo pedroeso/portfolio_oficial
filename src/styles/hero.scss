@@ -53,7 +53,7 @@
 .diferenciado {
     color: variaveis.$corDiferenciada;
             @media (max-width: 768px) {
-                font-size: 37px;
+                font-size: 33px;
                 padding-left: 30px;
     }
 }
@@ -68,9 +68,9 @@
     padding-bottom: 32px;
 
     @media (max-width: 768px) {
-        font-size: 18px;
+        font-size: 14px;
         justify-content: end;
-        padding-left: 80px;
+        padding-left: 52px;
     }
 
     &__back {
@@ -127,6 +127,7 @@
 .celular {
     @media (max-width: 768px) {
         align-items: center;
+        padding-bottom: 24px;
     }
 }
 
